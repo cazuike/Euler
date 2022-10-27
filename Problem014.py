@@ -13,4 +13,5 @@ for i in range(1,1000000):
     if z > k:
         k = z
         num = i
+print(k)
 #brute force answer 837799

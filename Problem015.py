@@ -17,3 +17,4 @@ def optimal(x,y): #uses memoization <- way better solution !!
         return 0
     memo[(x,y)] = optimal(x-1,y) + optimal(x,y-1)
     return memo[(x,y)]
+print(optimal(20,20))
