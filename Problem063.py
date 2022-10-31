@@ -9,4 +9,4 @@ while lower < 10:
     result += 10 - lower;
     n += 1
 
-print()
+print(result) #49ers
