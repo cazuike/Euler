@@ -22,4 +22,10 @@ def dfs(x,y,val):
     if y >= len(triangle[x]):
         return 0
     return max(dfs(x+1,y,val+triangle[x][y]), dfs(x+1,y+1,val+triangle[x][y]))
-    print(dfs(0,0,0))
+print(dfs(0,0,0))
+
+total = 0
+for i in range(len(triangle)-2,-1,-1):
+	for j in range(len(triangle[i])):
+		triangle[i][j] += max(triangle[i][j],triangle[i][j+1])
+print(triangle[0][0]) #tabulation
