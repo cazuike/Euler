@@ -17,10 +17,6 @@ total = 1
 
 
 for i in itertools.count(3,2):
-    if i**2 > 1000000000:
-        print("out of range of primes")
-        print(primes,total,i)
-        break
     total += 4
     if isPrime[i**2]:
         primes += 1
